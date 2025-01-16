@@ -1,5 +1,11 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import AdminApp from "./AdminApp";
+import React from 'react';
+import ReactDOM from 'react-dom/client';  // Asegúrate de importar desde 'react-dom/client'
 
-ReactDOM.render(<AdminApp />, document.getElementById("root"));
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
